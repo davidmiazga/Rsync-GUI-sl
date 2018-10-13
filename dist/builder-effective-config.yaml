@@ -1,5 +1,0 @@
-directories:
-  output: dist
-  buildResources: build
-appId: com.rogue-minds.rsync-guiSL
-electronVersion: 3.0.2
