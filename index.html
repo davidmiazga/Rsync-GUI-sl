@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html id='html'>
+  <head>
+    <title>Rsync GUI Simple Local</title>
+  </head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./node_modules/pickr-widget/dist/pickr.min.css">
+
+  <body>
+    <div id="titlebar" class="drag noselect">Rsync GUI 0.6.0
+    </div><!--titlebar-->
+    <div class="container">
+      <a title="Cmd+,"><span id="preferencesIcon" class="fas fa-gear"></span></a>
+      <!-- <img id="preferencesIcon" class="noselect" src="img/gearWh-v1.svg" /> -->
+    <h1 id="appTitle">Rsync GUI sl</h1>
+  <main id="mainContent">
+    <form id="form">
+      <div class="input"><span class="invalid fas fa-check-cirle"></span><p class="ready">Input Ready</p><div id="sourceTxt" class="textarea" required placeholder="Step1: Add file or folder (Sync item itself)" contenteditable="true"></div></div>
+    <!--checkboxes styled-->
+    <div class="folderOptions">
+      <label class="radioContainer">File/folder itself
+        <input id="sourceItemItself" type="radio" name="radio" checked="">
+        <span class="radioNew"></span>
+      </label>
+      <label class="radioContainer">Folder contents
+        <input id="sourceItemsInside" type="radio" name="radio" checked="">
+        <span class="radioNew"></span>
+      </label>
+      <div id="swapButton"><p id="arwL">‹</p>Swap<p id="arwR">›</p></div>
+
+    </div>
+    <!--end checkboxes styled-->
+      <div class="input"><span class="invalid fas fa-check-cirle"></span><p class="ready">Input Ready</p><div id="destinationTxt" class="textarea" required placeholder="Step2: Add Destination" contenteditable="true"></div></div>
+      <button id="Submit" title="Cmd+Enter">Sync Files (<span style='font-size:9px'>⌘↩</span>)</button>
+    </form>
+    
+    <div id="wndwLbl" class="closed">
+      <div id="termTogBtn">
+        <div class="carret1">&gt;</div>
+        <div class="carret2">&lt;</div>
+        <div id="termTogTxt">OPEN</div></div>
+        <p id="termWinTxt">Code preview</p>
+    </div>
+
+    <textarea id="terminal-output" class="closed" rows="10"  disabled="true">>rsync -avuP </textarea>
+    <p id="statusLabel">Status:</p>
+    <p id="status">Drag/drop onto window</p><br>
+
+    <!-- <p id="flagsLabel">Flags:</p> -->
+    <div id="flagWinLbl" class="closed">
+      <div id="flagTogBtn">
+          <div class="carret1">&gt;</div>
+          <div class="carret2">&lt;</div>
+          <div id="flagTogTxt">OPEN</div>
+      </div>
+        <p id="flagWinTxt">Flag options</p>
+      </div><!--end wndwLbl-->
+
+    <div id="flags" class="closed">
+    <!--checkboxes styled-->
+    <label class="chbxContainer">-a: Archive adds files not in destination (default)
+      <input id="aFlag" type="checkbox" checked="checked">
+      <span class="chmrkNew"></span>
+    </label>
+    <label class="chbxContainer">-u: Update overwrites files ONLY if source is newer (default)
+      <input id="uFlag" type="checkbox" checked="checked">
+      <span class="chmrkNew"></span>
+    </label>
+    <label class="chbxContainer">--delete: WARNING!! Deletes items not in source
+      <input id="dFlag" type="checkbox" checked="unchecked">
+      <span class="chmrkNew"></span>
+    </label>
+    </div><!--flags-->
+  </main>
+
+  <div id="prefPane" class="closed">
+
+    <label>Size of window at launch (w,h):</label>
+    <div id="prefIntW" class="txtEntry" contenteditable="true" placeholder="Width:"></div>
+    <div id="prefIntH" class="txtEntry" contenteditable="true" placeholder="Height:"></div>
+   
+  <label id="prefXyLabel">Position of window at launch (x,y):</label>
+    <div id="prefIntX" class="txtEntry" contenteditable="true" placeholder="X&Y must exist to override"></div>
+    <div id="prefIntY" class="txtEntry" contenteditable="true" placeholder="X&Y must exist to override"></div>
+    <label id="bgpckLbl">Window color <span class='reset'>Reset</span></label>
+    <input id="bgpck" class="color-picker" type="color" name="bgpck" value="#ff0000">
+    <label id="ttlpckLbl">Title Bar color <span class='reset'>Reset</span></label>
+    <input id="ttlpck" class="color-picker" type="color" name="ttlpck" value="#ff0000">
+    <label id="hlpckLbl">Headline color <span class='reset'>Reset</span></label>
+    <input id="hlpck" class="color-picker" type="color" name="hlpck" value="#ff0000">
+    <label id="txtpckLbl">Text color <span class='reset'>Reset</span></label>
+    <input id="txtpck" class="color-picker" type="color" name="txtpck" value="#ff0000">
+    <label id="actpckLbl">Active color <span class='reset'>Reset</span></label>
+    <input id="actpck" class="color-picker" type="color" name="actpck" value="#ff0000">
+  </div>
+
+
+
+
+  </div><!--container-->
+  <script src="./node_modules/pickr-widget/dist/pickr.min.js"></script>
+  <script src="./gui-funct.js"></script>
+
+  </body>
+</html>

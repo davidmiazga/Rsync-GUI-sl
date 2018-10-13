@@ -1,0 +1,23 @@
+{
+  "name": "Rsync-GUIsimpleLocal",
+  "version": "0.7.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "build": {
+    "appId": "com.rogue-minds.rsync-guiSL"
+  },
+  "author": "Thee RogueMind",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^3.0.2"
+  },
+  "dependencies": {
+    "electron-store": "^2.0.0",
+    "pickr-widget": "^0.2.4",
+    "typeface-roboto": "0.0.54"
+  }
+}
