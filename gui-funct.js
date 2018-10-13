@@ -53,7 +53,6 @@ var swapBtn = document.getElementById("swapButton");
 var fldrOpts = document.querySelectorAll('.folderOptions');
 var fldrOpt = fldrOpts[0];
 
-
 //::var hl elements state
 var folderInsideState = prefstore.get('folderInsideState');
 var hlEl01 = document.getElementById('appTitle');
