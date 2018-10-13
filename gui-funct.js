@@ -76,7 +76,6 @@ var newTxtCol_A04 = transparentize(newTxtCol, .4);
 prefFields = ["#prefIntW", "#prefIntH", "#prefIntX", "#prefIntY", ];
 var newActCol = prefstore.get('actCol');
 
-
 //::vars targeting checkbox flags:vflags
 var f_itselfGFXbtn = document.getElementById("sourceItemItself").nextElementSibling;
 var f_insideGFXbtn = document.getElementById("sourceItemsInside").nextElementSibling;
