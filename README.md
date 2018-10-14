@@ -3,7 +3,7 @@
 Shouldn't we all expect something more than terminal commands to gain useful features?
 Rsync-GUI is a small front-end application that makes using rsync to reduce file copy times a bit easier.
 
-# Using Rsync-GUI sl
+# Quickstart: Using Rsync-GUI sl
 
 1. Install Rsync-GUI sl application into applications folder (mac only) with .dmg installer
 2. Drag a file to copy into the window
@@ -12,4 +12,4 @@ Rsync-GUI is a small front-end application that makes using rsync to reduce file
 
 
 
-[Documentation found here &nearr;](https://davidmiazga.github.io/Rsync-GUI-sl)
+[Full documentation found here &nearr;](https://davidmiazga.github.io/Rsync-GUI-sl)
