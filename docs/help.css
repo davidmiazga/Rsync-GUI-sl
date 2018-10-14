@@ -34,7 +34,7 @@ html{
     max-width: 1200px;
 }
 h1,h2,h3,h4,h5,h6{
-    font-family: font-thin;
+    font-family: 'Roboto Thin', sans-serif;
 }
 h1{
     margin: 55px 0 15px 0;
@@ -54,7 +54,7 @@ h4{
 table{text-align: left;}
 table th {
     padding-top: 35px;
-    font-family: 'font-reg';
+    font-family: 'Roboto', sans-serif;
     color: rgba(173, 81, 27,1);
 }
 table p {
