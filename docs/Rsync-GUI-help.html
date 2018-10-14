@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html id='html'>
+  <head>
+    <title>Rsync GUI Help File</title>
+    <link rel="stylesheet" href="../node_modules/simple-lightbox/dist/simpleLightbox.min.css">
+    <script src="../node_modules/simple-lightbox/dist/simpleLightbox.min.js"></script>
+  </head>
+  <link rel="stylesheet" href="help.css">
+
+  <body>
+      <div id="container">
+        <h1>Rsync GUI :: Documentation</h1>
+        <h4>Reducing copy times...</h4>
+        <p>Shouldn't we all expect something more than terminal commands to gain useful features?</p>
+        <p>Rsync-GUI is a small front-end application that makes reducing copy times by using rsync a bit easier.</p>
+        <ul id="tableOfContents">
+        <li><a href="#s01">01: Original Rsync</a></li>
+        <li><a href="#s02">02: Rsync-GUI overview</a></li>
+        <li><a href="#s03">03: Preferences</a></li>
+        <li><a href="#s04">04: Folder Contents</a></li>
+        <li><a href="#s05">05: Minimized Interface</a></li>
+      </ul>
+
+      <table>
+        <tr>
+          <th id="s01">Section 01: <u>The original Rsync</u> (terminal version)</th>          
+        </tr>
+        <tr>
+            <td class="withMiniPic"><a href="TerminalExample-v1.png" title="Typical rsync terminal command"><img class="miniPic" src="TerminalExample-v1.png" alt="Typical rsync terminal command" /></a>You should know what rsync is. It is the terminal command (mac/linux) that simply takes a command (rysnc and flags) along with two file paths and copies one into another.</p>
+              <h4>One bit of awesomeness... </h4>
+            <p>Copy times are GREATLY reduced when rsync is set to include only the files that have changed, overwriting <u>only what it needs to</u>. This is done typically with the '-au flags'.</p>
+            
+            <p>In my opinion, this feature is sorely lacking in the finder itself. (Which, integrating an rsync copy into the Finder itself might be an interesting project for another time.)</p></td>          
+          </tr>
+          <tr>
+              <th id="s02">Section 02: Enter Rsync-GUI</th>          
+          </tr>
+          <tr>
+              <td><a class="lightBoxVideoLink" href="HowToUseRsyncGUI-output-v1.mp4" title="Full walkthrough of Rsync-GUI" target="_blank"><img class="miniPic" src="HowToUseRsyncGUI-thumbnail01.jpg" alt="Typical rsync terminal command" /></a>
+
+                <p>A small app to make this operation easier. Just drag in two files and press sync (Cmd-Enter). The -au flag is added by default. The most often used options in rsync have control buttons and switches. That's it, that's all this app does. </p>
+            </td>
+          </tr>
+          <tr>
+            <th id="s03">Section 03: Preferences</th>          
+          </tr>
+          <tr>
+              <td>
+              <h4>Position, size, colors & other default niceties</h4>
+              <p>If you use rsync often, you might have it visible and you should be able to change the color and other basic features. </p>
+              <p>To do so, just launch the preferences (Cmd-,) and make adjustments. Those preferences should persist whenever you launch the app.</p>
+              <p>NOTE: With a small interface, color indicators are pushed off the picker interface. This is a known bug. However, the ability to pick a color is NOT affected.</p>
+            </td>            
+          </tr>
+          <tr>
+            <th id="s04">Section 04: Copy folder contents</th>  
+          </tr>
+          <tr>
+              <td>
+              <h4>The trickiness of coping folder contents</h4>
+              <p>If you use rsync often, you will get in the habit of putting a slash ('/') at the end of your first entry to indicate that you'd like to copy the folder contents (as opposed to the folder itself). If you don't check this, you'll likely run the risk of copying your source folder to the inside of your target destination folder. </p>
+              <p>Rsync-GUI simplifies the task of inputting this setting for you with a handy radio button (whose setting is remembered). </p>
+            </td>            
+          </tr>
+          <tr>
+            <th id="s05">Section 05: Minimized Interface</th>          
+          </tr>
+          <tr>
+              <td>
+              <h4>Position, size, colors & other defaults</h4>
+              <p>If you use rsync often, you might want to keep it open and have it take up the least amout of real estate on your desktop as possible. </p>
+              <p>To quickly toggle to a minimized version of the interface, use the 'Minimized Interface' command (Cmd+Shift+M).</p>
+            </td>            
+          </tr>
+      </table>
+      <div class="rule"></div>
+<p>Rsync-GUI is free, I did it for fun. </p>
+<h2 class="end">Enjoy</h2>
+    </div><!--container-->
+
+    <script>
+    
+    new SimpleLightbox({elements: '.withMiniPic a'});
+    
+    </script>
+  </body>
+</html>
