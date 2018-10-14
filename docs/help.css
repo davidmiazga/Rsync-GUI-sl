@@ -1,36 +1,9 @@
-@font-face {
-    font-family: 'font-thin';
-    font-style: normal;
-    font-weight: 100;
-    src:
-      local('Roboto Thin '),
-      local('Roboto-Thin'),
-      url('../node_modules/typeface-roboto/files/roboto-latin-100.woff2') format('woff2'), /* Super Modern Browsers */
-      url('../node_modules/typeface-roboto/files/roboto-latin-100.woff') format('woff'); /* Modern Browsers */
-  }
-@font-face {
-    font-family: 'font-reg';
-    font-style: normal;
-    font-weight: 400;
-    src:
-      local('Roboto Regular '),
-      local('Roboto-Regular'),
-      url('../node_modules/typeface-roboto/files/roboto-latin-400.woff2') format('woff2'), /* Super Modern Browsers */
-      url('../node_modules/typeface-roboto/files/roboto-latin-400.woff') format('woff'); /* Modern Browsers */
-  }
-  @font-face {
-    font-family: "font-awesome";
-    src:
-      local('font-awesome'),
-      url('../font/Font Awesome 5 Pro-Solid-900.otf');
-  }
-
 /*bg rgba(0, 27, 39,.9) --bg tint 2,39,55-- fgOrng 173, 81, 27  magenta primary 250,63,84 -- cyan secondary 21,213,234 --*/
 * {box-sizing: border-box;}
 html, body {height: 100%;width: 100%}
 html{
     background: rgba(0, 27, 39,1);
-    font-family: 'font-thin';
+    font-family: 'Roboto', sans-serif;
     color: rgba(21,213,234,.7);
     font-size: 18px;
 }
