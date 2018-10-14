@@ -31,19 +31,20 @@
             <p>In my opinion, this feature is sorely lacking in the finder itself. (Which, integrating an rsync copy into the Finder itself might be an interesting project for another time.)</p></td>          
           </tr>
           <tr>
-              <th id="s02">Section 02: Enter Rsync-GUI</th>          
+              <th id="s02">Section 02: Enter Rsync-GUI sl</th>          
           </tr>
           <tr>
               <td><a class="lightBoxVideoLink" href="HowToUseRsyncGUI-output-v1.mp4" title="Full walkthrough of Rsync-GUI" target="_blank"><img class="miniPic" src="HowToUseRsyncGUI-thumbnail01.jpg" alt="Typical rsync terminal command" /></a>
 
                 <p>A small app to make this operation easier. Just drag in two files and press sync (Cmd-Enter). The -au flag is added by default. The most often used options in rsync have control buttons and switches. That's it, that's all this app does. </p>
+                <p>Also, we do not at this time support remote connections or logins. Just simple, local connections through the finder. Hence, the 'sl' at the end of the app name.</p>
             </td>
           </tr>
           <tr>
             <th id="s03">Section 03: Preferences</th>          
           </tr>
           <tr>
-              <td>
+              <td><a class="" href="Preferences-General.png" title="Preferences" target="_blank"><img class="miniPic" src="Preferences-General.png" alt="The preferences palette withd default colors" /></a>
               <h4>Position, size, colors & other default niceties</h4>
               <p>If you use rsync often, you might have it visible and you should be able to change the color and other basic features. </p>
               <p>To do so, just launch the preferences (Cmd-,) and make adjustments. Those preferences should persist whenever you launch the app.</p>
@@ -54,7 +55,8 @@
             <th id="s04">Section 04: Copy folder contents</th>  
           </tr>
           <tr>
-              <td>
+              <td><a class="" href="MinimalInterface.png" title="Preferences" target="_blank"><img class="miniPic" src="MinimalInterface.png" alt="Interface in minimal mode for quick easy transfers." /></a>
+
               <h4>The trickiness of coping folder contents</h4>
               <p>If you use rsync often, you will get in the habit of putting a slash ('/') at the end of your first entry to indicate that you'd like to copy the folder contents (as opposed to the folder itself). If you don't check this, you'll likely run the risk of copying your source folder to the inside of your target destination folder. </p>
               <p>Rsync-GUI simplifies the task of inputting this setting for you with a handy radio button (whose setting is remembered). </p>
